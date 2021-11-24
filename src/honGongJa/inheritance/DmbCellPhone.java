@@ -4,6 +4,9 @@ package honGongJa.inheritance;
 
 public class DmbCellPhone  extends CellPhone{
 	
+	/*
+	 * super();
+	 */
 	int channel;
 	
 	public DmbCellPhone(String model, String color, int channel) {
