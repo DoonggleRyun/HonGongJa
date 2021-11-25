@@ -8,7 +8,7 @@ class C extends A{}
 class D extends B{}
 class E extends C{}
 
-public class promotionExample {
+public class PromotionExample {
 
 	public static void main(String[] args) {
 		

@@ -1,6 +1,6 @@
 package honGongJa.inheritance;
 
-public class Student extends people {
+public class Student extends People {
 
 	int studentNo;
 	
