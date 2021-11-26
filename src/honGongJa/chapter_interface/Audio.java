@@ -1,6 +1,4 @@
-package honGongJa;
-
-import honGongJa.chapter_interface.RemoteControl;
+package honGongJa.chapter_interface;
 
 public class Audio implements RemoteControl {
 
