@@ -1,9 +1,9 @@
 package honGongJa.nestedClass;
 
 /*
-객체 지향 프로그래밍에서 클래스들은 서로 긴밀한 관계를 맺고 상호작용 한다.abstract어떤 클래스는 여러 클래스와 관계를 맺지만
-어떤 클래스는 특정 클래스와 관계를 맺는다. 특정 클래스와 관계를 맺는 경우에는 클래스 내부에 선언하는 것이 좋다.*/
-
+객체 지향 프로그래밍에서 클래스들은 서로 긴밀한 관계를 맺고 상호작용 한다.
+어떤 클래스는 여러 클래스와 관계를 맺지만 어떤 클래스는 특정 클래스와 관계를 맺는다.
+ 특정 클래스와 관계를 맺는 경우에는 클래스 내부에 선언하는 것이 좋다.*/
 
 /*
 중첩클래스는 선언되는 위치에 따라 1. 멤버클래스, 2.로컬 클래스 이 두 가지로 분류 된
@@ -23,41 +23,51 @@ package honGongJa.nestedClass;
 */
 public class A {
 
-	A(){
+	A() {
 		System.out.println("A 객체 생성됨");
 	}
-	
-	//인스턴스 멤버 클래스
-	class B{
-		B(){
+
+	// 인스턴스 멤버 클래스(클래스 내부의 클래슨데 static 안붙은)
+	class B {
+		B() {
 			System.out.println("B 객체 생성됨.");
 		}
+
 		int field1;
-		void method1() {}
+
+		void method1() {
+		}
 	}
-	
-	//정적 멤버 클래스
-	static class C{
+
+	// 정적 멤버 클래스(스태틱 붙은.
+	static class C {
 		public C() {
 			// TODO Auto-generated constructor stub
-		System.out.println("C 생성됨");
+			System.out.println("C 생성됨");
 		}
-		
+
 		int field1;
 		static int field2;
-		void method1() {}
-		static void method2() {}
+
+		void method1() {
+		}
+
+		static void method2() {
+		}
 	}
-	
+
 	void method() {
-		//로컬 클래스
-		class D{
+		// 로컬 클래스(메소드내부의 클래스)
+		class D {
 			public D() {
 				// TODO Auto-generated constructor stub
-			System.out.println("D 객체가 생성됨");
+				System.out.println("D 객체가 생성됨");
 			}
+
 			int field1;
-			void method1() {}
+
+			void method1() {
+			}
 		}
 		D d = new D();
 		d.field1 = 3;
