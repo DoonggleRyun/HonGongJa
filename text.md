@@ -403,8 +403,14 @@ hashCode()는 인스턴스의 저장 주소를 반환함.
 
 
 
-
-
+StrinBuilder, StringBuffer는 파이널이 아니얌.    
+내부적으로 가변적인 char[]배열을 가지고 있는 클래스.  
+문자열을 여러 번 연결하거나 변경할 때 사용하면 유용함.  
+매번 새로 생성하지 않고 기존 배열을 변경하므로 garbage가 생기지 않는다.  
+StringBuffer는 멀티 쓰레드 프로그래밍에서 동기화를 보장(Syncronization)  
+단일 쓰레드 프로그램에서는 StringBuilder를 사용하기를 권장  
+toString()메서드로 String 변환  
+ 
 
 
 
