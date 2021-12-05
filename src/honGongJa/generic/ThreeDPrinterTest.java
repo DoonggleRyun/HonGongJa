@@ -4,9 +4,15 @@ public class ThreeDPrinterTest {
 
 	public static void main(String[] args) {
 
-		ThreeDPrinter printer = new ThreeDPrinter();
+		ThreeDPrinter<Powder> printer = new ThreeDPrinter<Powder>();
 		printer.setMaterial(new Powder());
-		Powder powder = (Powder)printer.getMaterial();
+		Powder powder = printer.getMaterial();
 		
+		System.out.println(printer);
+		
+		ThreeDPrinter<Plastic> plasticPrinter = new ThreeDPrinter<Plastic>();
+		plasticPrinter.setMaterial(new Plastic());
+		Plastic plastic = plasticPrinter.getMaterial();
+		System.out.println(plasticPrinter);
 	}
 }

@@ -1,14 +1,22 @@
 package honGongJa.generic;
 
-public class ThreeDPrinter {
+public class ThreeDPrinter<T extends Material> {
 
-	private Object material;
+	private T material;
 
-	public Object getMaterial() {
+	public T getMaterial() {
 		return this.material;
 	}
 
-	public void setMaterial(Object object) {
+	public void setMaterial(T object) {
 		this.material = object;
+
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+
+		return material.toString();
 	}
 }
