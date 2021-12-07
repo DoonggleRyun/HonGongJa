@@ -455,7 +455,8 @@ forname 메소드
 이 문자를 자료형 매개변수라고 함.  
 
 
-Stack과 Queue의 기능은 구현된 클래스가 있지만 ArrayList나 LinkedList를 활용하여서 사용할 수도 있음.  
+Stack과 Queue의 기능은 구현된 클래스가 있지만   
+ArrayList나 LinkedList를 활용하여서 사용할 수도 있음.  
 Stack = Last In First Out LIFO.  
 맨 마지막에 추가된 요소가 먼저 꺼내지는 자료구조.  
 게임의 무르기 가능, 최근 자료 추출 등에서 사용.  
