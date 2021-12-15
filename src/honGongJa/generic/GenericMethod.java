@@ -20,7 +20,7 @@ public class GenericMethod {
 		Point<Integer, Double> p2 = new Point<>(10, 0.0);
 		
 		double rect = GenericMethod.<Integer, Double>makeRectangle(p1, p2);
-		System.out.println("rect: "+rect);
+		System.out.println("rect:    "+rect);
 	
 	}
 }
